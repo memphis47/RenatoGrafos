@@ -1,0 +1,12 @@
+strict graph cidades{
+	"BARREIRAS" -- "RIO BRANCO" [peso=3759]
+    "BARREIRAS" -- "PORTO VELHO" [peso=3759]
+    "PORTO VELHO" -- "VITÓRIA" [peso=3575]
+    "VITÓRIA" -- "CAMPINA GRANDE" [peso=3575]
+    "CAMPINA GRANDE" -- "CAMPO GRANDE" [peso=3285]
+    "CAMPO GRANDE" -- "PRES. PRUDENTE" [peso=3285]
+    "PRES. PRUDENTE" -- "RIO DE JANEIRO" [peso=1055]
+    "RIO JANEIRO" -- "GOIÂNIA" [peso=1055]
+    "JOINVILLE" -- "GOIÂNIA" [peso=1323]
+
+}
