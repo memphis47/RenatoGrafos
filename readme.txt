@@ -25,7 +25,7 @@ Bugs:
 		Função Responsável: destroi_grafo(); 
 		Descrição:  
 			Nos arquivos .dot que foram disponibilizados pelo professor não acontece nenhum erro, 
-			porêm com arquivos .dot que eu criei o arquivo apresenta o seguinte erro:
+			porêm com arquivos .dot que eu criei e com o arquivo petersen.dot o arquivo apresenta o seguinte erro:
 
 				*** Error in `./nome_do_executavel': free(): invalid next size (fast): 0x0000000001448180 ***
 				Abortado

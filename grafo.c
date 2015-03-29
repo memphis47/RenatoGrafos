@@ -115,7 +115,7 @@ static void getVerticeArestas( grafo graf,Agraph_t *g){
 //         NULL em caso de erro 
 grafo le_grafo(FILE *input) {
 	Agraph_t *g = agread(input, NULL);
-	if ( (g && agisstrict(g)) ){
+	if ( (g ) ){
 
 		direcionado = agisdirected(g);
 
@@ -222,8 +222,12 @@ void main(int argc, char *argv[])
 		out=stdout;
 	}
 	grafs=le_grafo(in);
-	escreve_grafo(out,grafs);
-	if(!destroi_grafo(grafs))
-		printf("Erro ao dar free() no grafo\n");
+	if(grafs!=NULL){
+		escreve_grafo(out,grafs);
+		if(!destroi_grafo(grafs))
+			printf("Erro ao dar free() no grafo\n");
+	}
+	else
+		printf("Aconteceu algum erro durante a leitura do grafo\n");
 
 }
